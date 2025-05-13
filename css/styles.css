@@ -1,19 +1,32 @@
+/* Globální nastavení */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0 20px;
+    padding: 0; /* opraveno z 0,20px */
     background-color: #f4f4f4;
     color: #333;
+    width: 100%;
 }
 
+/* Hlavička */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+/* Navigace */
 nav ul {
     list-style: none;
     padding: 0;
@@ -27,6 +40,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Sekce */
 section {
     margin: 40px 0;
     background: white;
@@ -34,6 +48,7 @@ section {
     border-radius: 10px;
 }
 
+/* Projekty */
 .project {
     display: flex;
     align-items: flex-start;
@@ -51,6 +66,7 @@ section {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
+/* Kód */
 code {
     background: #eee;
     padding: 2px 4px;
@@ -58,6 +74,7 @@ code {
     font-size: 0.95em;
 }
 
+/* Paticka */
 footer {
     text-align: center;
     padding: 20px;
@@ -89,7 +106,7 @@ body.dark-mode footer {
 #toggle-dark {
     position: fixed;
     top: 10px;
-    right: 30px; /* ← upravit */
+    right: 30px; /* můžeš upravit podle potřeby */
     z-index: 999;
     padding: 8px 12px;
     background: #ddd;
@@ -101,4 +118,15 @@ body.dark-mode footer {
 body.dark-mode #toggle-dark {
     background: #444;
     color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
