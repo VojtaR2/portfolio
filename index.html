@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -24,73 +23,90 @@
     </header>
 
     <section id="about">
-        <h2>O mně</h2>
-        <p>Zdravím, jmenuji se Vojtěch Rašťák a studuji obor Informační technologie na OA a SOŠL Opava. Tady najdete ukázky mé práce.</p>
+        <div class="overlay">
+            <h2>O mně</h2>
+            <p>Zdravím, jmenuji se Vojtěch Rašťák a studuji obor Informační technologie na OA a SOŠL Opava. Tady najdete ukázky mé práce.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projekty</h2>
+ 
 
+<section id="projects">
+    <h2>Projekty</h2>
+
+    <div class="projects-wrapper">
         <div class="project">
+            <img src="./img/gol.png" alt="Náhled projektu Game of Life" class="project-img">
             <div class="project-text">
                 <h3>Game of Life</h3>
                 <p>Jednoduchá implementace hry "Game of Life" od Johna Conwaye.</p>
-                <p><strong>Programovací jazyk:</strong> <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code>, <code><i class="fa-brands fa-js" style="color:#F7DF1E"></i> JavaScript</code></p>
-                <p>
-                    <i class="fab fa-github"></i> 
-                    <a href="https://vojtar2.github.io/gol/" target="_blank">
-                        Github pages
-                    </a>
+                <p><strong>Programovací jazyk:</strong> 
+                    <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, 
+                    <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code>, 
+                    <code><i class="fa-brands fa-js" style="color:#F7DF1E"></i> JavaScript</code>
                 </p>
+               
+                <p><i class="fa-brands fa-github"></i><a href="https://vojtar2.github.io/gol/" target="_blank"> Github pages</a></p>
             </div>
-            <img src="./img/gol.png" alt="Náhled projektu Game of Life" class="project-img" />
         </div>
 
         <div class="project">
+            <img src="./img/converter.png" alt="Náhled projektu převodníku" class="project-img">
             <div class="project-text">
                 <h3>Aplikace na převod</h3>
-                <p>Jednoduchá aplikace na převod stupňů Celsius na stupně Fahrenheit a naopak pomocí JavaScriptu.</p>
-                <p><strong>Programovací jazyk:</strong> <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code>, <code><i class="fa-brands fa-js" style="color:#F7DF1E"></i> JavaScript</code></p>
-                <p>
-                    <i class="fab fa-github"></i> 
-                    <a href="https://vojtar2.github.io/projekt02js/" target="_blank">
-                        Github pages
-                    </a>
+                <p>Jednoduchá aplikace na převod stupňů Celsius na Fahrenheit a naopak pomocí JavaScriptu.</p>
+                <p><strong>Programovací jazyk:</strong> 
+                    <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, 
+                    <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code>, 
+                    <code><i class="fa-brands fa-js" style="color:#F7DF1E"></i> JavaScript</code>
                 </p>
+                
+                <p><i class="fa-brands fa-github"></i><a href="https://vojtar2.github.io/projekt02js/" target="_blank"> Github pages</a></p>
             </div>
-            <img src="./img/converter.png" alt="Náhled projektu převodníku" class="project-img" />
         </div>
 
         <div class="project">
+            <img src="./img/mtb.png" alt="Náhled projektu MTB" class="project-img">
             <div class="project-text">
                 <h3>MTB stránka</h3>
                 <p>Moderně vypadající stránka ohledně světa kol.</p>
-                <p><strong>Programovací jazyk:</strong> <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code></p>
-                <p>
-                    <i class="fab fa-github"></i>
-                    <a href="https://vojtar2.github.io/pva-01.github.io/" target="_blank">
-                        Github pages
-                    </a>
+                <p><strong>Programovací jazyk:</strong> 
+                    <code><i class="fa-brands fa-html5" style="color:#E44D26"></i> HTML</code>, 
+                    <code><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i> CSS</code>
                 </p>
+        
+                <p><i class="fa-brands fa-github"></i><a href="https://vojtar2.github.io/pva-01.github.io/" target="_blank"> Github pages</a></p>
             </div>
-            <img src="./img/mtb.png" alt="Náhled projektu MTB" class="project-img" />
+        </div>
+    </div>
+</section>
+
+<div class="fade-in">
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:email@example.com">email@example.com</a></p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone-alt"></i>
+                <p><a href="tel:+420123456789">+420 123 456 789</a></p>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-github"></i>
+                <p><a href="https://github.com/vojtar2" target="_blank">github.com/vojtar2</a></p>
+            </div>
         </div>
     </section>
+</div>
 
-    <div class="fade-in">
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-            <p>Telefon: <a href="tel:+420123456789">+420 123 456 789</a></p>
-        </section>
-    </div>
+
 
     <footer>
         <p>&copy; 2025 Vojtěch Rašťák. Všechna práva vyhrazena.</p>
     </footer>
 
     <script src="./js/script.js"></script>
-
-
 </body>
 </html>
